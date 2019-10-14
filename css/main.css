@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.42;
+    font-family: "Roboto", Roboto, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    position: relative;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+.container{
+  width: 1040px; 
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  height: 100%;
+  font-family: "Roboto", Roboto, sans-serif;
+  height: 10vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 20px;
+}
+
+ ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ ul li{
+     list-style: none;
+ }
+
+header{
+  background: #4b73b5;
+  margin-bottom: 13px;
+}
+.container.header__container{
+  height: 77px;
+}
+
+
+.logo{
+    position: absolute;
+    top: 21px;
+    left: 21px;
+}
+.contacts{
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.contacts__phone{
+    color: inherit;
+    font-size: 21px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.contacts__shedule{
+font-size: 14px;
+opacity: .7;
+position: relative;
+}
+.contacts__timelist{
+    display: none;
+   font-size: 14px;
+    padding: 10px;
+font-weight: normal;
+
+}
+/*не выпадает блок*/
+.contacts__shedule:hover .contacts__timelist{
+    display: block;
+    position: absolute;
+    top: 120px;
+    z-index: 9999;
+   
+}
+
+.contents{
+  height: 100vh;
+}
+.container.main__container{
+  display: inline-block;
+
+}
+.main-content, 
+.sidebar{
+  display: inline-block;
+  vertical-align: top;
+}
+.main-content{
+  width: 800px;
+}
+.sidebar{
+  width: 200px;
+  
+}
+
+.nav__link:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 18px;
+  margin-right: 17px;
+  background: center center / contain no-repeat;
+  color: #4b73b5;
+
+}
+
+.nav__link{
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  color: #4b73b5;
+}
+
+.nav__link:hover{
+  color: black;
+}
+
+.nav__item--active .nav__link{
+color: black;
+}
+
+
+.nav__link--icon--arrow:before {
+background-image: url('../img/icons/arrow.png');
+}
+.nav__link--icon--star:before {
+  background-image: url('../img/icons/star.png');
+}
+.nav__link--icon--team:before {
+  background-image: url('../img/icons/team.png');
+}
+.nav__link--icon--arrow:hover:before {
+  background-image: url('../img/icons/arrow-hover.png');
+}
+.nav__link--icon--star:hover:before {
+  background-image: url('../img/icons/star-hover.png');
+}
+.nav__link--icon--team:hover:before {
+  background-image: url('../img/icons/team-hover.png');
+}
+
+.nav__item--active .nav__link--icon--arrow:before {
+  background-image: url('../img/icons/arrow.png');
+}
+.nav__item--active .nav__link--icon--star:before {
+  background-image: url('../img/icons/star.png');
+}
+.nav__item--active .nav__link--icon--team:before {
+  background-image: url('../img/icons/team.png');
+}
+.image__pic{
+  display: block;
+  min-width: 100%;
+}
+
+
+.tariffs{
+  
+}
+.tariffs__list{
+	min-width: 100%;
+}
+
+.tariffs__item {
+  
+	display: inline-block;
+  width: 250px;
+  height: 459px;
+ }
+
+ .tariffs__picture{
+  text-align: center;
+  background: url();
+}
+.tariffs__item--icon--flower:before{
+  background-image: url('../img/icons/flower.png');
+}
+.tariffs__item--icon--markstar:before{
+  background-image: url('../img/icons/markstar.png');
+}
+.tariffs__item--icon--palette:before{
+  background-image: url('../img/icons/palette.png');
+}
+.description ul{
+text-align: center;
+list-style: none;
+width: 188px;
+height: 152px;
+font-family: Roboto;
+font-size: 18px;
+line-height: 1.67;
+color: #221f1f;
+}
+.description li:first-child{
+  text-align: center;
+  list-style: none;
+}
+.description li{
+  text-align: left;
+  list-style: disc;
+}
+.description__title{
+  text-align: center;
+}
+.description__price{
+  font-size: 54px;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2{
+  font-size: 49px;
+}
+.news{
+  height: 100vh;
+}
+
+.news__content{
+  height: 100vh;
+}
+ 
+.news__item{
+  display: inline-block;
+
+}
+.news__image{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.news__image-pic{
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.news__wrapper {
+  width: 650px;
+  height: 165px;
+margin-right:0px;
+}
