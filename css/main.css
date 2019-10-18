@@ -351,11 +351,9 @@ footer{
 
 .footer__author{
   position: relative;
-  margin-top: 50px;
-  
-/*width: 30%;
-display: inline-block;*/
-text-align: left;
+  width: 236px;
+  text-align: left;
+  top: 20px;
 }
 .author__comments{
   display: block;
@@ -363,42 +361,35 @@ text-align: left;
 }
 
 .footer__logo{
- 
-  display: inline-block;
-  margin: 0 auto;
+ position: absolute;
+ top: 20px;
+ left: 490px;
 }
 
 
 .footer__socials{
-  display: inline-block;
-  text-align: right;  
+  position: absolute;
+  top: 20px;
+  left: 925px;  
   
 }
 .socials__item{
   display: inline-block;
-
-  
-
 }
 
 .socials__item a {
+  display: block;
   text-align: center;
   width: 20px;
   height: 20px;
   background-color: #fff;
+  background-size: auto;
   border: 1px solid black;
   border-radius: 50%;
-  margin: 0 10px 10px 0;
-  padding: 6px;
 }
 
 .socials__link{
-
-  
-  
   background: center center / contain no-repeat;
-  
-
 }
 
 /*.socials__link{
@@ -406,7 +397,6 @@ text-align: left;
   font-weight: bold;
   letter-spacing: 2.4px;
   text-decoration: none;
-  color: #4b73b5;
   
 }*/
 
