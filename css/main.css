@@ -369,6 +369,7 @@ footer{
 
 .footer__socials{
   position: absolute;
+  width: 155px;
   top: 20px;
   left: 925px;  
   
