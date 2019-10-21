@@ -1,0 +1,29 @@
+
+
+
+
+.team__image-pic{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: #cfd8dc;
+  
+}
+.team__image-text{
+  color: #fff;
+}
+.team__title{
+  font-size: 18px;
+}
+.team__post{
+  color: #4b73b5;
+  font-weight: bold;
+}
+.team__text{
+  
+}
+.partners{
+  display: inline-flex;
+  justify-content: space-between;
+
+}
