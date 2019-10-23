@@ -15,16 +15,21 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__logo">
-            <a href="/" class="logo">
-              <img src="./img/bg/logo.png" alt="Логотип Airplanet" class="logo__img">
-            </a>
-          </div>
+          <a href="/" class="logo">
+            <img src="./img/bg/logo.png" alt="Логотип Airplanet" class="logo__img">
+          </a>
+        </div>
         <address class="contacts">
           <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <div class="contacts__shedule">График работы</div>
-          <div class="contacts__timelist">
-            <span>пн-вс: 09:00-20:00</span>
-            <span>обед: 14:00-14:30</span>
+          <div class="dropdown">
+            <span class="contacts__shedule">График работы</span>
+            <div class="dropdown__block">
+              <ul class="shedule">
+                <li class="shedule__item">пн-вс: 09:00-20:00</li>
+                <li class="shedule__item">обед: 14:00-14:30</li>
+              </ul>
+              <div class="dropdown__triangle"></div>
+            </div>
           </div>
         </address>
       </div>
@@ -37,13 +42,13 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item nav__item--active">
-                <a href="index.html" class="nav__link nav__link--icon--arrow">ГЛАВНАЯ</a>
+                <a href="/index.html" class="nav__link nav__link--icon--arrow">ГЛАВНАЯ</a>
               </li>
               <li class="nav__item">
-                <a href="review.html" class="nav__link nav__link--icon--star">ОТЗЫВЫ</a>
+                <a href="/review.html" class="nav__link nav__link--icon--star">ОТЗЫВЫ</a>
               </li>
               <li class="nav__item">
-                <a href="team.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
+                <a href="/team.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
               </li>
             </ul>
           </nav>
@@ -57,7 +62,7 @@
             <h2 class="title">Тарифы</h2>
             <ul class="tariffs__list">
               <li class="tariffs__item">
-               <!--  <div class="tariffs__picture">
+                <!--  <div class="tariffs__picture">
                   <img src="./img/icons/flower.png" alt="" class="tariffs__picture--icon--flower">
                 </div> -->
                 <div class="description description__icon--flower">
@@ -76,7 +81,7 @@
                   </div>
                 </div>
               </li>
-              <li class="tariffs__item"> 
+              <li class="tariffs__item">
                 <div class="description description__icon--markstar">
                   <h4 class="description__title">ПРЕМИУМ</h4>
                   <ul class="description__list">
@@ -122,7 +127,7 @@
                     <img src="./img/bg/planeflying.png" alt="plane" class="news__image-pic">
                   </div>
                   <div class="news__wrapper">
-                    <div class="news__time">12.10.2016</div>
+                    <div class="news__date">12.10.2016</div>
                     <div class="news__title">Ночные перелеты дешевле!</div>
                     <div class="news__text">
                       <p>
@@ -141,7 +146,7 @@
                     <img src="./img/bg/mountain.png" alt="mountain" class="news__image-pic">
                   </div>
                   <div class="news__wrapper">
-                    <div class="news__time">01.02.2016</div>
+                    <div class="news__date">01.02.2016</div>
                     <div class="news__title">Путешествие в Грузию стало доступнее</div>
                     <div class="news__text">
                       <p>
@@ -158,7 +163,7 @@
                     <img src="./img/bg/kids.png" alt="kids" class="news__image-pic">
                   </div>
                   <div class="news__wrapper">
-                    <div class="news__time">22.12.2015</div>
+                    <div class="news__date">22.12.2015</div>
                     <div class="news__title">Детские авиабилеты доступны для бизнес-класса</div>
                     <div class="news__text">
                       <p>
@@ -176,21 +181,17 @@
 
           <div class="pagination">
             <div class="pagination__display">Страница 1 из 7</div>
-            <div class="pagination__pager">
-              <a href="#" class="pagination__button-prev"> &lt; </a>
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">3</a>
-                </li>
-              </ul>
-              <a href="#" class="pagination__button-next"> &gt; </a>
-            </div>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+            </ul>
           </div>
         </main>
       </div>
@@ -233,7 +234,7 @@
           </ul>
         </div>
       </div>
-    </footer> 
+    </footer>
   </div>
 
 </body>
