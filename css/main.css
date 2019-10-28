@@ -250,13 +250,13 @@ background-image: url('../img/icons/arrow.png');
 }
 
 .nav__item--active .nav__link--icon--arrow:before {
-  background-image: url('../img/icons/arrow.png');
+  background-image: url('../img/icons/arrow-hover.png');
 }
 .nav__item--active .nav__link--icon--star:before {
-  background-image: url('../img/icons/star.png');
+  background-image: url('../img/icons/star-hover.png');
 }
 .nav__item--active .nav__link--icon--team:before {
-  background-image: url('../img/icons/team.png');
+  background-image: url('../img/icons/team-hover.png');
 }
 .image__pic{
   display: block;
@@ -272,21 +272,11 @@ background-image: url('../img/icons/arrow.png');
   text-align: center;
 }
 
-.tariffs__item {
-  
+.tariffs__item { 
 	display: inline-flex;
   width: 250px;
  }
-.description:before{
-  content: "";
-  display: block;
 
-  margin: 0 auto;
-
-  width: 72px;
-  min-height: 72px;
-  background: center center / contain no-repeat;
-}
 .description {}
 
 .description__list{
@@ -308,19 +298,20 @@ margin: 0 auto;
   list-style: disc;
   
 }
-.description__icon--flower:before{
-  background-image: url('../img/icons/flower.png');
+.description__icon{
+  background: #4b73b5;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 72px;
+  min-height: 72px;
+  background: center center / contain no-repeat;
 }
-.description__icon--markstar:before{
-  background-image: url('../img/icons/markstar.png');
-}
-.description__icon--palette:before{
-  background-image: url('../img/icons/palette.png');
-}
+
 .description__price{
   font-family: "Roboto", Roboto, sans-serif;
   font-size: 54px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .description__price-curr{
 
@@ -435,6 +426,7 @@ footer{
 }
 .socials__item{
   display: inline-flex;
+  margin: 8px 3px;
 }
 
 .socials__item a { 
