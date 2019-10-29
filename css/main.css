@@ -63,7 +63,6 @@ margin: 0px 5px 5px 2px;
 }
 .breadcrumbs__link:first {
 content: "";
-text-decoration: none;
 
 }
 
@@ -392,6 +391,14 @@ h2{
   align-items: center;
   margin: 0px 10px 10px 0px;
 
+}
+
+.pagination__item--active .pagination__link {
+  background: #4b73b5;
+  width: 25px;
+  min-height: 25px;
+  color: #fff;
+ text-align: center;
 }
 .pagination__link{
   text-decoration: none;

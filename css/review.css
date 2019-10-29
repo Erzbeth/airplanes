@@ -40,22 +40,21 @@
   font-size: 18px;
 }
  .feedback{
-  background-color: red;
+display: flex;
 }
 .feedback__container {
   display: flex;
   flex-direction: column;
   width: 700px;
-  background: #b68f8f;
+  background-color: #e2dddd;
   align-items: stretch;
   justify-content: space-around;
 }
 
 .form__block {
   display: flex;
-  margin: 5px;
+  margin: 10px;
   flex-direction: column;
-  background: green;
   width: 100%;
  
 }
@@ -65,9 +64,7 @@
 }
 .form__row {
   display: flex;
-  justify-content: space-between;
- 
-  
+  justify-content: space-between; 
 }
 
 .form__column {
@@ -76,6 +73,7 @@
   height: 100%;
  
 }
+
 .form__column:last-child{
   margin-right: 0;
 }
@@ -83,12 +81,15 @@
   background: #fff;
   border-radius: 3px;
   border: none;
-  margin: 10px;
+ 
   width: 100%; 
   min-height: 30px;
 
 } 
 
+.form__input--textarea {
+  resize: none; /* Запрещаем изменять размер */
+}
 
 .feedback__button{
   background-color: #4b73b5;

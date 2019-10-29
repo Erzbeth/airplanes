@@ -43,13 +43,13 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="index.html" class="nav__link nav__link--icon--arrow">ГЛАВНАЯ</a>
+                <a href="./index.html" class="nav__link nav__link--icon--arrow">ГЛАВНАЯ</a>
               </li>
               <li class="nav__item nav__item--active">
-                <a href="review.html" class="nav__link nav__link--icon--star">ОТЗЫВЫ</a>
+                <a href="./review.html" class="nav__link nav__link--icon--star">ОТЗЫВЫ</a>
               </li>
               <li class="nav__item">
-                <a href="team.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
+                <a href="./team.html" class="nav__link nav__link--icon--team">ЭКИПАЖ</a>
               </li>
             </ul>
           </nav>
@@ -62,7 +62,7 @@
                 <a href="/" class="breadcrumbs__link">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a href="review.html" class="breadcrumbs__link">Отзывы</a>
+                <a href="./review.html" class="breadcrumbs__link">Отзывы</a>
               </li>
             </ul>
           </nav>
@@ -145,13 +145,13 @@
             <div class="pagination__display">Страница 2 из 7</div>
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a href="#" class="pagination__link">1</a>
+                <a href="./index.html" class="pagination__link">1</a>
+              </li>
+              <li class="pagination__item pagination__item--active">
+                <a href="./review.html" class="pagination__link">2</a>
               </li>
               <li class="pagination__item">
-                <a href="#" class="pagination__link">2</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">3</a>
+                <a href="./team.html" class="pagination__link">3</a>
               </li>
             </ul>
           </div>
@@ -175,12 +175,12 @@
                   <div class="form__column">
                     <div class="form__row">
                       <label class="form__block">
-                        <div class="form__block-title">Имя</div>
-                        <input type="text" class="form__input">
+                        <div class="form__block-title">Ваше имя</div>
+                        <input type="text" class="form__input" />
                       </label>
                       <label class="form__block">
                         <div class="form__block-title">Ссылка на профиль в VK</div>
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" />
                       </label>
                     </div>
                   </div>
@@ -193,8 +193,8 @@
                     </div>
                     <div class="form__row">
                       <div class="form__row-check">
-                        <div class="sdf">Отображать фото в отзыве?</div>
-                        <input id="radio_one" type="radio" class="radio" />
+                        <div class="form__radio">Отображать фото в отзыве?</div>
+                        <input id="radio_one" type="radio" class="radio" checked/>
                         <label for="radio_one">Да</label>
                         <input id="radio_two" type="radio" class="radio" />
                         <label for="radio_two">Нет</label>
