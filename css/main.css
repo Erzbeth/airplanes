@@ -48,7 +48,9 @@ h6 {
    display: inline-block;
  }
 
- 
+ .breadcrumbs {
+  margin-bottom: 10px;
+}
 .breadcrumbs__item, 
 .breadcrumbs__link{
 display: inline-flex;
@@ -56,15 +58,25 @@ vertical-align: middle;
 text-decoration: none;
 margin-top: 20px;
 }
+.breadcrumbs__item:first-child .breadcrumbs__link:before {
+  content: "";
+  
+  }
+.breadcrumbs__item.active .breadcrumbs__link {
+  color: #221f1f;
+  text-decoration: none;
+}
+.breadcrumbs__link {
+  color: #1c5bc3;
+  font-style: italic;
+}
 
-.breadcrumbs__link::before {
+.breadcrumbs__link:before {
 content: "/";
-margin: 0px 5px 5px 2px;
+display: inline-block;
+margin-right: 3px;
 }
-.breadcrumbs__link:first {
-content: "";
 
-}
 
 header{
   background: #4b73b5;
@@ -196,7 +208,7 @@ color: #fff;
   margin-right: 40px; 
 }
 
-.nav__link:before{
+.menu__link:before{
   content: "";
   display: inline-flex;
   vertical-align: middle;
@@ -208,7 +220,7 @@ color: #fff;
 
 }
 
-.nav__link{
+.menu__link{
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2.4px;
@@ -217,44 +229,44 @@ color: #fff;
   
 }
 
-.nav__link:hover{
+.menu__link:hover{
   color: black;
  
 }
 
-.nav__item--active .nav__link{
+.menu__item--active .menu__link{
 color: black;
 }
-.nav__item{
+.menu__item{
   margin-top: 40px;
 }
 
-.nav__link--icon--arrow:before {
+.menu__link--icon--arrow:before {
 background-image: url('../img/icons/arrow.png');
 }
-.nav__link--icon--star:before {
+.menu__link--icon--star:before {
   background-image: url('../img/icons/star.png');
 }
-.nav__link--icon--team:before {
+.menu__link--icon--team:before {
   background-image: url('../img/icons/team.png');
 }
-.nav__link--icon--arrow:hover:before {
+.menu__link--icon--arrow:hover:before {
   background-image: url('../img/icons/arrow-hover.png');
 }
-.nav__link--icon--star:hover:before {
+.menu__link--icon--star:hover:before {
   background-image: url('../img/icons/star-hover.png');
 }
-.nav__link--icon--team:hover:before {
+.menu__link--icon--team:hover:before {
   background-image: url('../img/icons/team-hover.png');
 }
 
-.nav__item--active .nav__link--icon--arrow:before {
+.menu__item--active .menu__link--icon--arrow:before {
   background-image: url('../img/icons/arrow-hover.png');
 }
-.nav__item--active .nav__link--icon--star:before {
+.menu__item--active .menu__link--icon--star:before {
   background-image: url('../img/icons/star-hover.png');
 }
-.nav__item--active .nav__link--icon--team:before {
+.menu__item--active .menu__link--icon--team:before {
   background-image: url('../img/icons/team-hover.png');
 }
 .image__pic{
