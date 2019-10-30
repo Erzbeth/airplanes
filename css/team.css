@@ -62,25 +62,15 @@ margin-left: 10px;
   width: 30%;
 
   }
-
-  .partners__image--bmp:hover {
-    background-image: url('../img/icons/partner-bmp.png');
+  .partners__image {
+     filter: grayscale(100%);
+    transition: 1s;
   }
-  .partners__image--tetra:hover {
-    background-image: url('../img/icons/partner-tetra.png');
-  }
-  .partners__image--sib:hover {
-    background-image: url('../img/icons/partner-sib.png');
-  }
-  .partners__image-one:hover {
-    background-image: url('../img/icons/partner-one.png');
-  }
-  .partners__image--bing:hover {
-    background-image: url('../img/icons/partner-bing.png');
-  }
-  .partners__image--ural:hover {
-    background-image: url('../img/icons/partner-ural.png');
-  }
+ 
+   .partners__image:hover {
+    
+    filter: grayscale(0);
+   }
 
 
 
