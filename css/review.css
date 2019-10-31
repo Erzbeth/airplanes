@@ -11,6 +11,7 @@
 }
 .reviews__item {
   display: flex;
+  width: 77%;
 
 }
 
@@ -121,18 +122,20 @@ margin-bottom: 50px;
 }
 
 .form__question-btn {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
+  display: inline-flex;
+  justify-content: center;
   margin-right: 16px;
   cursor: pointer;
 }
 
 .form__question-radio {
-  position: absolute;
-  top: 0;
-  left: -9999px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+ 
+} 
 
 .form__question-radio:checked+.form__question-visible {
   border-color: #1c5bc3;
@@ -149,7 +152,7 @@ margin-bottom: 50px;
 
 .form__question-visible,
 .form__question-name {
-  display: inline-block;
+  display: inline-flex;
   vertical-align: middle;
 }
 
@@ -173,7 +176,7 @@ margin-bottom: 50px;
 
 .form__question-visible:after {
   content: "";
-  display: block;
+  display: inline-flex;
   width: 0px;
   height: 0px;
   border-radius: 50%;

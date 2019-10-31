@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Airplanet</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="/css/auth.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/auth.css">
 </head>
 
 <body>
@@ -40,86 +41,87 @@
     <div class="contents">
       <div class="container">
         <aside class="sidebar">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item menu__item--active">
-                <a href="./index.html" class="menu__link menu__link--icon--arrow">ГЛАВНАЯ</a>
-              </li>
-              <li class="menu__item">
-                <a href="./review.html" class="menu__link menu__link--icon--star">ОТЗЫВЫ</a>
-              </li>
-              <li class="menu__item">
-                <a href="./team.html" class="menu__link menu__link--icon--team">ЭКИПАЖ</a>
-              </li>
-            </ul>
-          </nav>
+            <div class="tariffs">
+                <h2 class="title">Тарифы</h2>
+                <ul class="tariffs__list">
+                  <li class="tariffs__item">
+                    <div class="description">
+                      <!-- <div class="description__icon">
+                        <img src="img/icons/flower.png" alt="" class="description__icon--flower">
+                      </div> -->
+                      <h4 class="description__title">СТАНДАРТ</h4>
+                      <ul class="description__list">
+                        <li class="description__item">
+                          <div class="description__opinion">Создан для вашего комфортного отдыха</div>
+                        </li>
+                        <li class="description__item">Питание включено</li>
+                        <li class="description__item">Багаж (5 кг)</li>
+                        <li class="description__item">Детское кресло</li>
+                      </ul>
+                      <div class="description__price">
+                        <span class="description__price-curr">$</span>
+                        <span class="description__price-sell">19</span>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- <li class="tariffs__item">
+                    <div class="description">
+                      <div class="description__icon">
+                        <img src="img/icons/markstar.png" alt="" class="description__icon--markstar">
+                      </div>
+                      <h4 class="description__title">ПРЕМИУМ</h4>
+                      <ul class="description__list">
+                        <li class="description__item">Для любителей хороших впечатлений</li>
+                        <li class="description__item">Питание включено</li>
+                        <li class="description__item">Багаж (5 кг)</li>
+                        <li class="description__item">Детское кресло</li>
+                      </ul>
+                      <div class="description__price">
+                        <span class="description__price-curr">$</span>
+                        <span class="description__price-sell">39</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tariffs__item">
+                    <div class="description">
+                      <div class="description__icon">
+                        <img src="img/icons/palette.png" alt="" class="description__icon--palette">
+                      </div>
+                      <h4 class="description__title">ЛАКШЕРИ</h4>
+                      <ul class="description__list">
+                        <div class="description__item">Всё самое лучшее и незабываемое</div>
+                        <li class="description__item">Питание включено</li>
+                        <li class="description__item">Багаж (5 кг)</li>
+                        <li class="description__item">Детское кресло</li>
+                      </ul>
+                      <div class="description__price">
+                        <span class="description__price-curr">$</span>
+                        <span class="description__price-sell">99</span>
+                      </div>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
         </aside>
 
         <main class="main-content">
+            <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item menu__item--active">
+                    <a href="./index.html" class="menu__link menu__link--icon--arrow">ГЛАВНАЯ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="./review.html" class="menu__link menu__link--icon--star">ОТЗЫВЫ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="./team.html" class="menu__link menu__link--icon--team">ЭКИПАЖ</a>
+                  </li>
+                </ul>
+              </nav>
           <div class="image">
             <img src="./img/bg/plane.png" alt="airplane" class="image__pic">
           </div>
-          <div class="tariffs">
-            <h2 class="title">Тарифы</h2>
-            <ul class="tariffs__list">
-              <li class="tariffs__item">
-                <div class="description">
-                  <div class="description__icon">
-                    <img src="img/icons/flower.png" alt="" class="description__icon--flower">
-                  </div>
-                  <h4 class="description__title">СТАНДАРТ</h4>
-                  <ul class="description__list">
-                    <li class="description__item">
-                      <div class="description__opinion">Создан для вашего комфортного отдыха</div>
-                    </li>
-                    <li class="description__item">Питание включено</li>
-                    <li class="description__item">Багаж (5 кг)</li>
-                    <li class="description__item">Детское кресло</li>
-                  </ul>
-                  <div class="description__price">
-                    <span class="description__price-curr">$</span>
-                    <span class="description__price-sell">19</span>
-                  </div>
-                </div>
-              </li>
-              <li class="tariffs__item">
-                <div class="description">
-                  <div class="description__icon">
-                    <img src="img/icons/markstar.png" alt="" class="description__icon--markstar">
-                  </div>
-                  <h4 class="description__title">ПРЕМИУМ</h4>
-                  <ul class="description__list">
-                    <li class="description__item">Для любителей хороших впечатлений</li>
-                    <li class="description__item">Питание включено</li>
-                    <li class="description__item">Багаж (5 кг)</li>
-                    <li class="description__item">Детское кресло</li>
-                  </ul>
-                  <div class="description__price">
-                    <span class="description__price-curr">$</span>
-                    <span class="description__price-sell">39</span>
-                  </div>
-                </div>
-              </li>
-              <li class="tariffs__item">
-                <div class="description">
-                  <div class="description__icon">
-                    <img src="img/icons/palette.png" alt="" class="description__icon--palette">
-                  </div>
-                  <h4 class="description__title">ЛАКШЕРИ</h4>
-                  <ul class="description__list">
-                    <div class="description__item">Всё самое лучшее и незабываемое</div>
-                    <li class="description__item">Питание включено</li>
-                    <li class="description__item">Багаж (5 кг)</li>
-                    <li class="description__item">Детское кресло</li>
-                  </ul>
-                  <div class="description__price">
-                    <span class="description__price-curr">$</span>
-                    <span class="description__price-sell">99</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+          
 
 
           <div class="news">
@@ -185,18 +187,21 @@
 
           <div class="pagination">
             <div class="pagination__info">Страница 1 из 3</div>
-            <ul class="pagination__list">
-              <li class="pagination__item pagination__item--active">
-                <a href="./index.html" class="pagination__link">1</a>
-              </li>
-              <li class="pagination__item">
-                <a href="./review.html" class="pagination__link">2</a>
-              </li>
-              <li class="pagination__item">
-                <a href="./team.html" class="pagination__link">3</a>
-              </li>
-            </ul>
-          </div>
+            <div class="pagination__btns">
+              <a class="pagination__list" href="#"></a>
+              <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active">
+                  <a href="./index.html" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="./review.html" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="./team.html" class="pagination__link">3</a>
+                </li>
+              </ul>
+              <a class="pagination__list" href="#">></a>
+            </div>
         </main>
       </div>
     </div>

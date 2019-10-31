@@ -1,52 +1,130 @@
-.auth {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../img/bg/Background.png") center center / cover no-repeat;;
+.wrapper.wrapper_auth {
+  min-width: 100%;
+  background: url("../img/bg/Background.png") center center no-repeat;
+  background-size: cover;
+}
 
-}
-.auth__container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.welcome {
+
+ .welcome {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  animation: bounce .8s;
+  text-align: center;
   color: #fff;
 }
+.wrapper__container {
+  
+  
+  animation: bounce 1s 1s;
+  transform-origin: center bottom;
+}
+/* .welcome__logo {
+  display: flex;
+ justify-content: center;
+  margin-bottom: 25px;
+} */
 .welcome__btn {
-  background: #1c5bc3;
-  padding: 13px 22px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 13px 20px;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2.4px;
-  border: 3px solid currentColor;
+  border: 1px solid currentColor;
   font-size: 12px;
   font-weight: bold;
   border-radius: 3px;
-  /* border: solid 1px #1c5bc3; */
- color: #fff;
-}
+  transition: .3s;
+ color: #1c5bc3;
+ width: 20%;
+} 
 .welcome__btn:hover {
   
- background: #fff;
- color: #1c5bc3;
+ background: #1c5bc3;
+ color: #fff;
  transition: .8s;
 
+} 
+/* .btn {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2.4px;
+  border: 1px solid currentColor;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: .3s;
+ color: #1c5bc3;
+ width: 20%;
+} 
+.btn:hover {
+  background: #1c5bc3;
+  color: #fff;
+} */
+
+
+
+.welcome__enter-btn {
+  white-space: nowrap;
+  color: #1c5bc3;
 }
-.welcome__logo {
-  display: block;
-  min-width: 100%;
-  margin-bottom: 20px;
+.welcome__enter-btn:hover {
+  white-space: nowrap;
+  color: #fff;
+}
+.welcome__enter-btn:hover .welcome__enter-icon {
+  background-image: url("../img/icons/plane_hover.png");
+}
+.welcome__enter-text {
+  display: inline-flex;
+  justify-content: center;
 }
 
+.welcome__enter-icon {
+  background: url("../img/icons/plane.png") center center no-repeat;
+  width: 15px;
+  height: 14px;
+  display: inline-flex;
+  
+  margin-top: -1px;
+  margin-left: 10px;
+  transition: .3s;
+}
+
+
 @keyframes bounce {
-  0%,
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+} 
+
+
+  /* 0%,
   40%,
   80% {
     transform: translateY(0);
@@ -64,6 +142,6 @@
     
     transform: translateY(-15px);
   }
- 
+  
 
-}
+}*/

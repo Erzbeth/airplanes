@@ -47,6 +47,10 @@ h6 {
  span{
    display: inline-block;
  }
+ * {
+   
+  box-sizing: border-box;
+}
 
  .breadcrumbs {
   margin-bottom: 10px;
@@ -206,7 +210,10 @@ color: #fff;
 .sidebar{
   margin-right: 40px; 
 }
-
+.menu__list {
+  display: inline-flex;
+  justify-content: space-between;
+}
 .menu__link:before{
   content: "";
   display: inline-flex;
@@ -238,6 +245,7 @@ color: black;
 }
 .menu__item{
   margin-top: 40px;
+  margin-left: 5px;
 }
 
 .menu__link--icon--arrow:before {
@@ -275,7 +283,7 @@ background-image: url('../img/icons/arrow.png');
 
 
 .tariffs{
-  
+  font-style: italic;
 }
 .tariffs__list{
   min-width: 100%;
@@ -384,7 +392,7 @@ h2{
 .pagination__item,
 .pagination__info,
 .pagination__btns {
-  display: inline-block;
+  display: inline-flex;
   vertical-align: middle;
 }
 
@@ -405,6 +413,7 @@ h2{
 
 .pagination__btns {
   margin-left: 9px;
+
 }
 
 
